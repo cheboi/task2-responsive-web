@@ -1,0 +1,217 @@
+*{
+    margin:0;
+    padding: 2px;
+}
+body{
+    background-color: lightgray;
+}
+.navbar{
+            
+}
+.navbar ul{
+    display: grid;
+    grid-template-columns: repeat(4, 2fr);
+    list-style: none;
+    margin-bottom: 10px;
+    justify-content: center;
+}
+.navbar li{
+    margin-top: 20px;
+    background-color: white;
+    padding-top: 5px;
+    text-align: center;
+    width: 20vw;
+    height: 4vh;    
+}
+.navbar li a{
+    padding: 3px 3px;
+    text-decoration: none;
+    color: rgba(19, 18, 18, 0.644);
+    text-transform: uppercase;
+    font-weight: 600;
+}
+.container{
+    display: flex;
+    height: 60vh;
+}
+.container .containerpre{
+    background-image: url("./images/workstation.jpg");
+    background-position: center;
+    background-repeat: no-repeat;
+    background-size: cover;
+    align-items: center;
+    justify-content: center;
+    color: white;
+    margin-right: 5%;
+}
+.container .containerpre h2{
+    margin-left: 30px;
+    padding-top: 17vh;
+}
+.container .containerpre p{
+    margin-left: 30px;
+}
+.container .containerpre button {
+    background-color: rgb(63, 60, 60);
+    color: white;
+    height: 25px;
+    width: 90px;
+    margin: 30px;
+}
+
+.container .right{
+    background-color: rgb(233, 227, 227);
+    width: 37vw;
+    height: 60vh;
+    align-items: center;
+    justify-content: center;
+    text-align: center;
+}
+.right button{
+    background-color: rgb(124, 107, 107);
+    width: 8vw;
+}
+.right .membership{
+    background-color: white;
+    margin: 20px;
+    height: 25vh;
+    margin-right: 0;
+
+}
+.right .membership h5{
+    margin: 10%;
+    
+}
+.footer-nav {
+    display: grid;
+    grid-template-columns: repeat(4, 1fr);
+    gap: 10px;
+    grid-auto-rows: minmax(100px, auto);
+
+}
+.footer-content{
+    height: 200px;
+    width: 200px;
+    margin-top: 20px;
+    background-color: white;
+    text-align: center;
+    width: 24vw;
+    height: 25vh;
+    align-items: center;
+    justify-self: center;
+}
+.footer-image{
+    height: 50px;
+    width: 50px;
+    margin-top: 20px;
+}
+@media screen and (max-width: 767px) {
+    body{
+        background-color: lightgray;
+    }
+    .navbar ul{
+        display: flex;
+        flex-direction: column;;
+        list-style: none;
+        align-items: center;
+    }
+    .navbar li{
+        margin-top: 20px;
+        background-color: white;
+        text-align: center;
+        width: 90%;
+        height: 4vh;
+    }
+    .navbar  .contact {
+        background-color: rgb(63, 60, 60); ;
+    }
+    .navbar li a{
+        padding: 3px 3px;
+        text-decoration: none;
+        color: rgba(19, 18, 18, 0.644);
+        font-size:  15px;
+        font-weight: 400;
+        text-transform: uppercase;
+    }
+    .container{
+        display: flex;
+        flex-direction: column;
+        height: 90vh;
+        align-items: center;;
+    }
+    .container .containerpre{
+        background-image: url("./images/workstation.jpg");
+        background-position: center;
+        background-repeat: no-repeat;
+        background-size: cover;
+        border: 2px solid gray;
+        align-items: center;
+        justify-content: center;
+        color: white;
+        margin-right: 5%;
+        height: 40%;
+        width: 90%;
+    }
+    .container .containerpre h2{
+        margin-left: 15px;
+        padding-top: 9vh;
+    }
+    .container .containerpre p{
+        margin-left: 30px;
+    }
+    .container .containerpre button {
+        background-color: rgb(63, 60, 60);
+        color: white;
+        height: 25px;
+        width: 90px;
+        margin: 30px;
+    }
+    
+    .container .right{
+        background-color: lightgray;
+        width: 100vw;
+        height: 60vh;
+        align-items: center;
+        justify-content: center;
+        text-align: center;
+    }
+    .right button{
+        background-color: rgb(63, 60, 60);
+        width: 8vw;
+    }
+    .right .membership{
+        background-color: white;
+        margin: 20px;
+        height: 25vh;
+    
+    }
+    .right .membership h5{
+        margin: 2%;
+    }
+    .right .membership button{
+        margin-top: 3%;
+        width: 20vw;
+        color: white;
+    }
+    .footer-nav {
+        margin: 5%;
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+    
+    }
+    .footer-content{
+        margin-top: 5%;
+        background-color: white;
+        text-align: center;
+        width: 90vw;
+        height: 25vh;
+        align-items: center;
+        justify-self: center;
+    }
+    .footer-image{
+        height: 50px;
+        width: 50px;
+        margin-top: 20px;
+    }
+  }
